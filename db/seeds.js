@@ -1,6 +1,7 @@
 let mongoose = require('./connections')
 let team = require('../models/Team')
 
+
 let logo = [
 
     {
@@ -51,3 +52,5 @@ team.create(logo)
 
         console.log('Team', logo)
     })
+
+    ///////
