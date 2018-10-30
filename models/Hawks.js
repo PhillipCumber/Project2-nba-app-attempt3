@@ -1,5 +1,5 @@
 ///Connected the connections page to my player model
-let mongoose = require('../db/connection')
+let mongoose = require('../db/connections')
 let Schema = mongoose.Schema
 
 ///Player Model
@@ -9,6 +9,7 @@ let HawksPlayer = new Schema({
     number: Number,
     team: String,
     img: String
+
 })
 
 module.exports = mongoose.model('Hawks', HawksPlayer)
