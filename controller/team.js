@@ -5,12 +5,13 @@ let teamController = {
 
     index: (req, res) => {
 
-        team.find()
-            .then((team) => {
+        res.send('hey')
+    //     team.find()
+    //         .then((team) => {
 
-                res.render('team/index', {teamHBS: team})
-            })
-    }
+    //             res.render('team/index', {teamHBS: team})
+    //         })
+    // }
 }
 
 module.exports = teamController
