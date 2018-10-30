@@ -1,4 +1,4 @@
-let mongoose = require('./connection')
+let mongoose = require('./connections')
 let team = require('../models/Team')
 
 let logo = [

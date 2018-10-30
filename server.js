@@ -10,6 +10,9 @@ app.use(express.json())
 ////routes
 app.use('/', routes)
 
+////
+app.set('view engine', 'hbs')
+
 ///Connecting to local server
 let PORT = process.env.PORT || 3200
 

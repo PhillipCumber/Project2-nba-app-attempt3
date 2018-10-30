@@ -5,7 +5,11 @@ let teamController = {
 
     index: (req, res) => {
 
-        res.send('hey there')
+        team.find()
+            .then((team) => {
+
+                res.render('team/index', {teamHBS: team})
+            })
     }
 }
 
