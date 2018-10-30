@@ -12,7 +12,7 @@ app.use(express.json())
 ////routes
 app.use('/', routes)
 
-////
+////connecting views
 app.set('view engine', 'hbs')
 
 ///Connecting to local server
