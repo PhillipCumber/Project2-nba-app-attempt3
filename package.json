@@ -1,0 +1,27 @@
+{
+  "name": "project2-nba-app-attempt3",
+  "version": "1.0.0",
+  "description": "WDI 18 project 2 creating my first node/express app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhillipCumber/Project2-nba-app-attempt3.git"
+  },
+  "author": "Phillip Cumberlander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhillipCumber/Project2-nba-app-attempt3/issues"
+  },
+  "homepage": "https://github.com/PhillipCumber/Project2-nba-app-attempt3#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.5"
+  }
+}
