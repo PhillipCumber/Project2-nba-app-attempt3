@@ -1,6 +1,6 @@
 let express = require('express')
 let router = express.Router()
-let teamController = require('../controller/team')
+let teamController = require('../controllers/team')
 
 router.get('/', teamController.index)
 
