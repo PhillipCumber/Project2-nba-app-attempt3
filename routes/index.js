@@ -6,9 +6,6 @@ let lakersController = require('../controllers/lakers')
 let knicksController = require('../controllers/knicks')
 let spursController = require('../controllers/spurs')
 
-
-
-
 ////home page
 router.get('/', teamController.index)
 

@@ -1,8 +1,11 @@
 
 {{#each teamHBS}}
 
+<a href="{{_id}}">
 <div class="card mt-5 ml-5 d-inline-flex" style="width: 18rem;">
+  <a href="{{_id}}">
   <img class="card-img-top" src="{{img}}" alt="Card image cap">
+  </a>
   <div class="card-body">
     <h5 class="card-title">{{name}}</h5>
     <p class="card-text">{{coach}}</p>
