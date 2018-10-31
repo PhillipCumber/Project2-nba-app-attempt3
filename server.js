@@ -3,6 +3,7 @@ require('dotenv').config()
 let express = require('express')
 let app = express()
 let routes = require('./routes/index')
+let bodyParser = require('body-parser')
 
 ///Middleware
 app.use(express.urlencoded({ extended: true }))

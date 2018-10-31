@@ -13,21 +13,14 @@ let hawksController = {
 
     },
 
-    show: (req, res) => {
+    new: (req, res) => {
 
-      
-
+        res.render('hawks/new')
     },
 
-    create: (req, res) => {
+    show: (req, res) => {
 
-        let info = new Hawks({
-
-            name: req.body.name,
-            address:req.body.number,
-            salary: req.body.team
-        });
-
+        
     }
 }
 
