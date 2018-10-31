@@ -24,22 +24,12 @@
 				{{hawksHBS.team}}
 
 			</p><br>
-		{{!-- <h3>Price:</h3>
-			<p id="cost">$
-
-				{{donut.price}} each</p><br>
-
-			<h3 id="quantity">
-
-	 				{{donut.qty}} remaining
-
-			</h3> --}}
 
 			<br>
 
 		</div>
 
-    <form action="/hawks/{{_id}}?_method=DELETE" method="POST">
+    <form action="/hawks/{{hawksHBS._id}}?_method=DELETE" method="POST">
       <button type="submit">DELETE THIS PLAYER</button>
     </form>
 </main>
