@@ -45,11 +45,24 @@ let hawksController = {
             })
     },
 
-    // update: (req, res) => {
+    update: (req, res) => {
 
-    //     Hawks.findByIdAndUpdate(req.params.id, req.body)
-    //         .then()
-    // }
-}
+        Hawks.findByIdAndUpdate(req.params.id, req.body)
+            .then((updateInfo) => {
+
+                res.redirect(`/hawks/${updatedInfo._id}`)
+            }) 
+    },
+
+    delete: (req, res) => {
+
+        Hawks.findByIdAndRemove(req.params.id)
+            .then(() => {
+            
+                res.redirect('/hawks')
+        })
+      }
+    }
+
 
 module.exports = hawksController
