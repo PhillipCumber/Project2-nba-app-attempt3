@@ -1,5 +1,6 @@
 let mongoose = require('./connections')
 let team = require('../models/Team')
+let Hawks = require('../models/Hawks')
 
 
 let logo = [
@@ -54,3 +55,29 @@ team.create(logo)
     })
 
     ///////
+
+    //////Hawks model seeds
+
+    let HawksPlayers = [
+
+        {
+            name: "Trae Young",
+            number: 11,
+            team: "Atlanta Hawks",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+
+        {
+            name: "Taurean Prince",
+            number: 12,
+            team: "Atlanta Hawks",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"  
+        },
+
+        {
+            name: "Vince Carter",
+            number: 15,
+            team: "Atlanta Hawks",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"  
+        },
+    ]

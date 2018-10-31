@@ -5,7 +5,11 @@ let hawksController = {
 
     index: (req,res) => {
         
-        res.send('hey')
+        Hawks.find()
+            .then((info) => {
+
+                res.render('hawks/index', {hawksHBS: info})
+            })
 
     }
 }
