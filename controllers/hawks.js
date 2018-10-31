@@ -15,6 +15,12 @@ let hawksController = {
 
     show: (req, res) => {
 
+      
+
+    },
+
+    create: (req, res) => {
+
         let info = new Hawks({
 
             name: req.body.name,
