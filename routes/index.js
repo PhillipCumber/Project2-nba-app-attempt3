@@ -11,7 +11,7 @@ router.get('/', teamController.index)
 
 ///hawks page
 router.get('/hawks', hawksController.index)
-router.post('/hawks', hawksController.create)
+router.get('/hawks/:id', hawksController.show)
 
 ///lakers page
 router.get('/lakers', lakersController.index)
