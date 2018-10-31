@@ -14,20 +14,34 @@ router.get('/hawks', hawksController.index)
 router.get('/hawks/new', hawksController.new)
 router.post('/hawks', hawksController.create)
 router.get('/hawks/:hawksId', hawksController.show)
-// router.get('/:id/edit', hawksController.edit)
 router.patch('/hawks/:hawksId', hawksController.update)
 router.delete('/hawks/:hawksId', hawksController.delete)
 
 
 ///lakers page
 router.get('/lakers', lakersController.index)
+router.get('/lakers', knicksController.index)
+router.get('/lakers/new', knicksController.new)
+router.post('/lakers', knicksController.create)
+router.get('/lakers/:lakersId', knicksController.show)
+router.patch('/lakers/:lakersId', knicksController.update)
+router.delete('/lakers/:lakersId', knicksController.delete)
 
 ///knicks page
 router.get('/knicks', knicksController.index)
+router.get('/knicks/new', knicksController.new)
+router.post('/knicks', knicksController.create)
+router.get('/knicks/:knicksId', knicksController.show)
+router.patch('/knicks/:knicksId', knicksController.update)
+router.delete('/knicks/:knicksId', knicksController.delete)
 
 ///spurs page
 router.get('/spurs', spursController.index)
-
+router.get('/spurs/new', spursController.new)
+router.post('/spurs', spursController.create)
+router.get('/spurs/:spursId', spursController.show)
+router.patch('/spurs/:spursId', spursController.update)
+router.delete('/spurs/:spursId', spursController.delete)
 
 
 module.exports = router

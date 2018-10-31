@@ -3,10 +3,65 @@ let Lakers = require('../models/Lakers')
 
 let lakersController = {
 
-    index: (req, res) => {
+    index: (req,res) => {
+        
+        Lakers.find()
+            .then((info) => {
 
-        res.send('hey')
-    }
+                res.render('lakers/index', {lakersHBS: info})
+            })
+
+    },
+
+    new: (req, res) => {
+
+        res.render('lakers/new')
+    },
+
+    show: (req, res) => {
+
+        Lakers.findById(req.params.hawksId)
+            .then((info) => {
+
+                res.render('lakers/show', {lakersHBS: info})
+            })
+    },
+
+    create: (req, res) => {
+
+        Lakers.create(req.body)
+            .then((newInfo) => {
+                newInfo.save()
+                res.redirect(`/lakers`)
+            })
+    },
+
+    edit: (req, res) => {
+
+        Lakers.findById(req.params.id)
+            .then(info => {
+
+                res.render('lakers/edit', {lakersHBS: info})
+            })
+
+        res.redirect('/lakers')
+    },
+
+    update: (req, res) => {
+
+        Lakers.findByIdAndUpdate(req.params.lakersId, req.body)
+            .then((updateInfo) => {
+
+                res.redirect(`/lakers/${updateInfo._id}`)
+            }) 
+    },
+
+    delete: (req, res) => {
+        Hawks.findByIdAndRemove(req.params.hawksId)
+            .then(() => {
+                res.redirect('/lakers')
+        })
+      }
 }
 
 module.exports = lakersController

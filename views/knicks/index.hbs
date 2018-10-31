@@ -1,1 +1,46 @@
 
+<style type="text/css">
+   body { background:url('https://cdn.elitesportsny.com/wp-content/uploads/2018/07/new_york_knicks_future.jpg') !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+
+<div class="jumbotron mt-5">
+  <h1 class="display-4">New York Knicks</h1>
+  <p class="lead">
+  </p>
+</div>
+
+{{#each knicksHBS}}
+
+<div class="card mt-5 ml-5 d-inline-flex" style="width: 18rem;">
+  <img class="card-img-top" src="{{img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h5 class="card-title">{{team}}</h5>
+    <p class="card-text">{{number}}</p>
+    <a href="/knicks/{{_id}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+{{/each}}
+
+{{!-- form container --}}
+
+  <div class="mt-5 ml-5">
+
+<form action="/knicks" method="POST">
+
+<label for="name"> Name
+  <input name="name" type="text">
+</label>
+
+<label for="number"> Number
+  <input name="number" type="text">
+</label>
+
+<label for="img"> img
+  <input name="img" type="text">
+</label>
+
+<button type="submit">add</button>
+</form>

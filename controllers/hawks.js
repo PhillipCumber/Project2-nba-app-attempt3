@@ -52,7 +52,7 @@ let hawksController = {
         Hawks.findByIdAndUpdate(req.params.id, req.body)
             .then((updateInfo) => {
 
-                res.redirect(`/hawks/${updatedInfo._id}`)
+                res.redirect(`/hawks/${updateInfo._id}`)
             }) 
     },
 

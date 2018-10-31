@@ -1,0 +1,45 @@
+<style type="text/css">
+   body { background:url('https://cdn.vox-cdn.com/thumbor/Z_qlBbZXrKkVebjy3IVtekhRUIU=/1063x29:4886x3257/1200x800/filters:focal(2010x515:2790x1295)/cdn.vox-cdn.com/uploads/chorus_image/image/61957049/usa_today_11552672.0.jpg') !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+
+<div class="jumbotron mt-5">
+  <h1 class="display-4">San Antonio Spurs</h1>
+  <p class="lead">
+  </p>
+</div>
+
+{{#each spursHBS}}
+
+<div class="card mt-5 ml-5 d-inline-flex" style="width: 18rem;">
+  <img class="card-img-top" src="{{img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h5 class="card-title">{{team}}</h5>
+    <p class="card-text">{{number}}</p>
+    <a href="/spurs/{{_id}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+{{/each}}
+
+{{!-- form container --}}
+
+  <div class="mt-5 ml-5">
+
+<form action="/spurs" method="POST">
+
+<label for="name"> Name
+  <input name="name" type="text">
+</label>
+
+<label for="number"> Number
+  <input name="number" type="text">
+</label>
+
+<label for="img"> img
+  <input name="img" type="text">
+</label>
+
+<button type="submit">add</button>
+</form>

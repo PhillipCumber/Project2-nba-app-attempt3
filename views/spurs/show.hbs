@@ -4,26 +4,26 @@
 
 	<h2>You are viewing:
 
-		{{hawksHBS.name}}
+		{{spursHBS.name}}
 
 	</h2>
 
 	<a href="/">Return to Home Page</a>
 
-	<div class="hawk-container-show">
-		<h2 id="hawk-name">
+	<div class="spur-container-show">
+		<h2 id="spur-name">
 
-				{{hawksHBS.name}}
+				{{spursHBS.name}}
 
 		</h2>
 
-				<img src="{{hawksHBS.img}}" />
+				<img src="{{spursHBS.img}}" />
 
 		<br>
 		<h3>Description:</h3>
 			<p>
 
-				{{hawksHBS.team}}
+				{{spursHBS.team}}
 
 			</p><br>
 
@@ -31,7 +31,7 @@
 
 		</div>
 
-    <form action="/hawks/{{hawksHBS._id}}?_method=DELETE" method="POST">
+    <form action="/spurs/{{spursHBS._id}}?_method=DELETE" method="POST">
       <button type="submit">DELETE THIS PLAYER</button>
     </form>
 </main>
