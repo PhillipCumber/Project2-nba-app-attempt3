@@ -13,7 +13,7 @@
     <h5 class="card-title">{{name}}</h5>
     <h5 class="card-title">{{team}}</h5>
     <p class="card-text">{{number}}</p>
-    <a href="/{{_id}}" class="btn btn-primary">Go somewhere</a>
+    <a href="/hawks/{{_id}}" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -23,21 +23,22 @@
 
   <div class="mt-5 ml-5">
 
-<form method="post" action="/hawks">
+<form action="/hawks" method="POST">
 
-<label for=""> Name
-  <input type="text">
+<label for="name"> Name
+  <input name="name" type="text">
 </label>
 
-<label for=""> Number
-  <input type="text">
+<label for="number"> Number
+  <input name="number" type="text">
 </label>
 
-<label for=""> img
-  <input type="text">
+<label for="img"> img
+  <input name="img" type="text">
 </label>
+
+<button type="submit">add</button>
 </form>
 
-<button type="submit">Add me</button>
 
-</div>
+

@@ -11,12 +11,12 @@ router.get('/', teamController.index)
 
 ///hawks page
 router.get('/hawks', hawksController.index)
-router.get('/hawks', hawksController.new)
-router.get('/:id', hawksController.show)
+router.get('/hawks/new', hawksController.new)
 router.post('/hawks', hawksController.create)
-router.get('/:id/edit', hawksController.edit)
-router.patch('/:id', hawksController.update)
-router.delete('/:id', hawksController.delete)
+router.get('/hawks/:hawksId', hawksController.show)
+// router.get('/:id/edit', hawksController.edit)
+router.patch('/hawks/:hawksId', hawksController.update)
+router.delete('/hawks/:hawksId', hawksController.delete)
 
 
 ///lakers page

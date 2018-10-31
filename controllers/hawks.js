@@ -20,7 +20,7 @@ let hawksController = {
 
     show: (req, res) => {
 
-        Hawks.findById(req.params.id)
+        Hawks.findById(req.params.hawksId)
             .then((info) => {
 
                 res.render('hawks/show', {hawksHBS: info})
@@ -31,8 +31,8 @@ let hawksController = {
 
         Hawks.create(req.body)
             .then((newInfo) => {
-
-                res.redirect(`/${newInfo._id}`)
+                newInfo.save()
+                res.redirect(`/hawks`)
             })
     },
 
@@ -43,6 +43,8 @@ let hawksController = {
 
                 res.render('hawks/edit', {hawksHBS: info})
             })
+
+        res.redirect('/hawks')
     },
 
     update: (req, res) => {
@@ -55,10 +57,8 @@ let hawksController = {
     },
 
     delete: (req, res) => {
-
-        Hawks.findByIdAndRemove(req.params.id)
+        Hawks.findByIdAndRemove(req.params.hawksId)
             .then(() => {
-            
                 res.redirect('/hawks')
         })
       }
