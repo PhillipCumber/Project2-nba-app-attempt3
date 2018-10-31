@@ -67,21 +67,21 @@ team.create(logo)
             name: "Trae Young",
             number: 11,
             team: "Atlanta Hawks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://bloximages.chicago2.vip.townnews.com/normantranscript.com/content/tncms/assets/v3/editorial/5/39/5393cc28-ccd9-58d7-bcc2-a34ed7aaff11/5aa1f3a359a6c.image.jpg?resize=400%2C283"
         },
 
         {
             name: "Taurean Prince",
             number: 12,
             team: "Atlanta Hawks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"  
+            img: "https://ballershoesdb.com/wp-content/uploads/2017/01/taurean-Cropped-500x667.jpg"  
         },
 
         {
             name: "Vince Carter",
             number: 15,
             team: "Atlanta Hawks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"  
+            img: "https://www.sportstalkatl.com/wp-content/uploads/2018/07/2350540187_30db0efe08.jpg"  
         },
     ]
 
@@ -129,25 +129,25 @@ team.create(logo)
     let SpursPlayers = [
 
         {
-            name: "Lebron James",
-            number: 23,
-            team: "Los Angeles Lakers",
+            name: "Demar Derozan",
+            number: 10,
+            team: "San Antonio Spurs",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
 
 
         {
-            name: "Lebron James",
-            number: 23,
-            team: "Los Angeles Lakers",
+            name: "Pau Gasol",
+            number: 16,
+            team: "San Antonio Spurs",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
 
 
         {
-            name: "Lebron James",
-            number: 23,
-            team: "Los Angeles Lakers",
+            name: "Lamarcus Aldridge",
+            number: 12,
+            team: "San Antonio Spurs",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
     ]
@@ -162,25 +162,25 @@ team.create(logo)
     let KnicksPlayers = [
 
         {
-            name: "Lebron James",
-            number: 23,
-            team: "Los Angeles Lakers",
+            name: "Kristaps Porzingis",
+            number: 6,
+            team: "New York Knicks",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
 
 
         {
-            name: "Lebron James",
-            number: 23,
-            team: "Los Angeles Lakers",
+            name: "Kevin Knox",
+            number: 20,
+            team: "New York Knicks",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
 
 
         {
-            name: "Lebron James",
+            name: "Enes Kanter",
             number: 23,
-            team: "Los Angeles Lakers",
+            team: "New York Knicks",
             img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
         },
     ]
