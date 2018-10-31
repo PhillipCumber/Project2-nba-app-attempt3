@@ -20,7 +20,7 @@ let lakersController = {
 
     show: (req, res) => {
 
-        Lakers.findById(req.params.hawksId)
+        Lakers.findById(req.params.lakersId)
             .then((info) => {
 
                 res.render('lakers/show', {lakersHBS: info})
@@ -38,7 +38,7 @@ let lakersController = {
 
     edit: (req, res) => {
 
-        Lakers.findById(req.params.id)
+        Lakers.findById(req.params.lakersId)
             .then(info => {
 
                 res.render('lakers/edit', {lakersHBS: info})
@@ -49,7 +49,7 @@ let lakersController = {
 
     update: (req, res) => {
 
-        Lakers.findByIdAndUpdate(req.params.lakersId, req.body)
+        Lakers.findByIdAndUpdate(req.params.id, req.body)
             .then((updateInfo) => {
 
                 res.redirect(`/lakers/${updateInfo._id}`)
@@ -57,7 +57,7 @@ let lakersController = {
     },
 
     delete: (req, res) => {
-        Hawks.findByIdAndRemove(req.params.hawksId)
+        Lakers.findByIdAndRemove(req.params.LakersId)
             .then(() => {
                 res.redirect('/lakers')
         })

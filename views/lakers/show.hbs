@@ -1,0 +1,37 @@
+{{!-- referenced from the donut-shop hw --}}
+
+<main>
+
+	<h2>You are viewing:
+
+		{{lakersHBS.name}}
+
+	</h2>
+
+	<a href="/">Return to Home Page</a>
+
+	<div class="laker-container-show">
+		<h2 id="laker-name">
+
+				{{lakersHBS.name}}
+
+		</h2>
+
+				<img src="{{lakersHBS.img}}" />
+
+		<br>
+		<h3>Description:</h3>
+			<p>
+
+				{{lakersHBS.team}}
+
+			</p><br>
+
+			<br>
+
+		</div>
+
+    <form action="/lakers/{{lakersHBS._id}}?_method=DELETE" method="POST">
+      <button type="submit">DELETE THIS PLAYER</button>
+    </form>
+</main>

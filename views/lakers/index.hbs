@@ -1,0 +1,46 @@
+
+<style type="text/css">
+   body { background:url('https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1531549856/180713-smith-boby-lebron-hero-2_tc6vfd') !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+
+<div class="jumbotron mt-5">
+  <h1 class="display-4">LA Lakers</h1>
+  <p class="lead">
+  </p>
+</div>
+
+{{#each lakersHBS}}
+
+<div class="card mt-5 ml-5 d-inline-flex" style="width: 18rem;">
+  <img class="card-img-top" src="{{img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h5 class="card-title">{{team}}</h5>
+    <p class="card-text">{{number}}</p>
+    <a href="/lakers/{{_id}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+{{/each}}
+
+{{!-- form container --}}
+
+  <div class="mt-5 ml-5">
+
+<form action="/lakers" method="POST">
+
+<label for="name"> Name
+  <input name="name" type="text">
+</label>
+
+<label for="number"> Number
+  <input name="number" type="text">
+</label>
+
+<label for="img"> img
+  <input name="img" type="text">
+</label>
+
+<button type="submit">add</button>
+</form>
