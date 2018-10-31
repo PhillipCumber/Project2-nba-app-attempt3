@@ -123,3 +123,70 @@ team.create(logo)
     
             console.log('New Player', lakers)
         })
+
+
+    /////Seeds for Spurs model
+    let SpursPlayers = [
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+    ]
+
+    Spurs.create(SpursPlayers)
+    .then(spurs => {
+
+        console.log('New Player', spurs)
+    })
+
+    ////Seeds for the Knicks model
+    let KnicksPlayers = [
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+
+
+        {
+            name: "Lebron James",
+            number: 23,
+            team: "Los Angeles Lakers",
+            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+        },
+    ]
+
+    Knicks.create(KnicksPlayers)
+    .then(knicks => {
+
+        console.log('New Player', knicks)
+    })
