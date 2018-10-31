@@ -132,7 +132,7 @@ team.create(logo)
             name: "Demar Derozan",
             number: 10,
             team: "San Antonio Spurs",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/DeMar_DeRozan_Nov_2016_cropped.jpg/220px-DeMar_DeRozan_Nov_2016_cropped.jpg"
         },
 
 
@@ -140,7 +140,7 @@ team.create(logo)
             name: "Pau Gasol",
             number: 16,
             team: "San Antonio Spurs",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Lakers_vs_Nuggets_2013-01-06_%2822%29.JPG/220px-Lakers_vs_Nuggets_2013-01-06_%2822%29.JPG"
         },
 
 
@@ -148,7 +148,7 @@ team.create(logo)
             name: "Lamarcus Aldridge",
             number: 12,
             team: "San Antonio Spurs",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://s.hdnux.com/photos/37/47/52/8288941/7/920x920.jpg"
         },
     ]
 
@@ -165,7 +165,7 @@ team.create(logo)
             name: "Kristaps Porzingis",
             number: 6,
             team: "New York Knicks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://nbcprobasketballtalk.files.wordpress.com/2018/01/896860592-e1515183111260.jpg?w=610&h=343&crop=1"
         },
 
 
@@ -173,7 +173,7 @@ team.create(logo)
             name: "Kevin Knox",
             number: 20,
             team: "New York Knicks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://thenypost.files.wordpress.com/2018/10/kevin-knox1.jpg?quality=90&strip=all&w=618&h=410&crop=1"
         },
 
 
@@ -181,7 +181,7 @@ team.create(logo)
             name: "Enes Kanter",
             number: 23,
             team: "New York Knicks",
-            img: "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254"
+            img: "https://pbs.twimg.com/profile_images/1032552460630536192/A8eN3SGh_400x400.jpg"
         },
     ]
 

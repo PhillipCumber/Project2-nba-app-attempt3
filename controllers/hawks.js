@@ -11,6 +11,11 @@ let hawksController = {
                 res.render('hawks/index', {hawksHBS: info})
             })
 
+    },
+
+    create: (req, res) => {
+
+        
     }
 }
 
