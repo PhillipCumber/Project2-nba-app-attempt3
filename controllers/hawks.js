@@ -20,8 +20,36 @@ let hawksController = {
 
     show: (req, res) => {
 
-        
-    }
+        Hawks.findById(req.params.id)
+            .then((info) => {
+
+                res.render('hawks/show', {hawksHBS: info})
+            })
+    },
+
+    create: (req, res) => {
+
+        Hawks.create(req.body)
+            .then((newInfo) => {
+
+                res.redirect(`/${newInfo._id}`)
+            })
+    },
+
+    edit: (req, res) => {
+
+        Hawks.findById(req.params.id)
+            .then(info => {
+
+                res.render('hawks/edit', {hawksHBS: info})
+            })
+    },
+
+    // update: (req, res) => {
+
+    //     Hawks.findByIdAndUpdate(req.params.id, req.body)
+    //         .then()
+    // }
 }
 
 module.exports = hawksController
