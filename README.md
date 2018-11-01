@@ -4,7 +4,7 @@ First of all this is not a last minute project I will link the repo to my previo
 https://github.com/PhillipCumber/Project2-Cartoon-Stations
 https://github.com/PhillipCumber/Project-2-nba-app
 
-Trello:
+Trello: https://trello.com/b/fBCOmm5Q/project-2-first-app
 
 My site: https://secure-citadel-66803.herokuapp.com/
 
