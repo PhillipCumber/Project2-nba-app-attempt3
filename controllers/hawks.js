@@ -38,7 +38,7 @@ let hawksController = {
 
     edit: (req, res) => {
 
-        Hawks.findById(req.params.id)
+        Hawks.findById(req.params.hawksId)
             .then(info => {
 
                 res.render('hawks/edit', {hawksHBS: info})
@@ -49,7 +49,7 @@ let hawksController = {
 
     update: (req, res) => {
 
-        Hawks.findByIdAndUpdate(req.params.id, req.body)
+        Hawks.findByIdAndUpdate(req.params.hawksId, req.body)
             .then((updateInfo) => {
 
                 res.redirect(`/hawks/${updateInfo._id}`)
